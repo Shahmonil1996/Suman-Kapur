@@ -1,0 +1,118 @@
+  li{
+  	list-style: none;
+  	display: inline-block;
+  }
+  .navbar{
+  	position:fixed;
+  	 padding:  0.6em 0em 0.6em 1.5em;
+    background:#f1f1f1;
+    z-index:9999;
+    border-bottom: 1px solid #999;
+    width:100%;
+  }
+  .banned{
+  	width:200px;
+  	height:100px;
+  }
+  .mdclose{
+  	background: rgb(72,209,204);
+  }
+  .awards h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color:#00a8b6;
+    margin: 0em 0em 0.1em 0em;
+    font-family: 'HammersmithOne-Regular';
+  }
+  .space{
+    width:100%;
+    height:50px;
+  }
+  .headline{
+    cursor:pointer;
+  }
+ ul li ul.dropdown{
+        min-width: 125px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        
+    }
+    ul li:hover ul.dropdown{
+        display: block; /* Display the dropdown */
+    }
+    ul.dropdown li{
+        display: block;
+    }
+    ul.dropdown li a:hover{
+        color:black;
+    }
+
+/**
+ * Profile image component
+ */
+.profile-header-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 5px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #51D2B7;
+    cursor:pointer;
+
+}
+.profile-header-img > img.img-circle:hover{
+   -moz-box-shadow: 0 0 15px #303030
+    -webkit-box-shadow: 0 0 15px #303030;
+     box-shadow: 0 0 15px #303030;
+     } 
+}
+.profile-header {
+    margin-top: 43px;
+
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-size:1em;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(220,220,220,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+}
